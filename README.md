@@ -2,7 +2,7 @@
 
 
 The repo helps you search for a optimal architecture for a given dataset Convolutional Neural Network or Residual Neural Network for 1d signals. 
-The general architecture is each ConvNet/ResNet is divided into stages where fearures are kept fix at each one. There several layers at each stages increasing sequentially. 
+The general architecture is each ConvNet/ResNet is divided into stages where features are kept fix at each one. Several layers at each stage increasing sequentially. 
 
 # Usages
 usage: main.py [-h] [--epochs EPOCHS] [--patience_epochs PATIENCE_EPOCHS] [--trails TRAILS] [--seed SEED] [--load_study LOAD_STUDY] [--dataset_file DATASET_FILE] [--study_file STUDY_FILE]
