@@ -1,4 +1,4 @@
-### Searching for optimal architecture for ResNet or ConvNet using Optuna grid search for 1d data
+# Searching for optimal architecture for ResNet or ConvNet using Optuna grid search for 1d data
 
 
 The repo helps you search for a optimal architecture for a given dataset Convolutional Neural Network or Residual Neural Network for 1d signals. 
@@ -287,6 +287,79 @@ Epoch 20 0.9 [sec] 30.107635 0.372391 5
 trail number = 8
 Best value: 7429.49658203125, Best params: {'lr': 0.0002775059131499799, 'batch_size': 10, 'num_blocks': 2, 'features_per_block1': 4, 'num_layers1': 1, 'features_per_block2': 16, 'layers_per_block2': 4, 'network': 'ConvNet'}
 saving study in to file study.pkl
+
+
+ConvNet [2 2] [16 32]
+number of batches = 7.8125
+2023-11-07 19:32:03.358402: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2023-11-07 19:32:06.878725: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2023-11-07 19:32:08.069598: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2023-11-07 19:32:08.619461: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+Epoch 1 6.1 [sec] 160320744062.976013 8.803352 0
+Epoch 2 2.7 [sec] 1495020339.200000 1.968334 0
+Epoch 3 2.5 [sec] 109862912.000000 0.710527 0
+Epoch 4 2.6 [sec] 29423972.352000 0.468051 0
+Epoch 5 2.5 [sec] 5003795.968000 0.376515 0
+Epoch 6 2.5 [sec] 3113697.792000 0.351138 0
+Epoch 7 2.5 [sec] 30070583.296000 0.375740 1
+Epoch 8 2.5 [sec] 19500017.664000 0.348033 2
+Epoch 9 2.5 [sec] 23567767.552000 0.346055 3
+Epoch 10 2.5 [sec] 24712880.128000 0.346819 4
+Epoch 11 2.5 [sec] 27131445.248000 0.344940 5
+Epoch 12 2.5 [sec] 42463653.888000 0.351545 6
+Epoch 13 2.5 [sec] 62990381.056000 0.347886 7
+Epoch 14 2.5 [sec] 82237259.776000 0.343892 8
+Epoch 15 2.5 [sec] 63443017.728000 0.340874 9
+[I 2023-11-07 19:32:46,695] Trial 8 finished with value: 49819164672.0 and parameters: {'lr': 0.03179689199761305, 'batch_size': 7, 'num_blocks': 2, 'features_per_block1': 4, 'num_layers1': 2, 'features_per_block2': 32, 'layers_per_block2': 2, 'network': 'ConvNet'}. Best is trial 6 with value: 7429.49658203125.
+
+trail number = 9
+Best value: 7429.49658203125, Best params: {'lr': 0.0002775059131499799, 'batch_size': 10, 'num_blocks': 2, 'features_per_block1': 4, 'num_layers1': 1, 'features_per_block2': 16, 'layers_per_block2': 4, 'network': 'ConvNet'}
+saving study in to file study.pkl
+
+
+ResNet [1] [8]
+number of batches = 0.9765625
+2023-11-07 19:32:47.213544: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2023-11-07 19:32:48.425109: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2023-11-07 19:32:49.203978: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+Epoch 1 2.6 [sec] 135388677013.503998 1.203094 0
+Epoch 2 0.8 [sec] 662351314.944000 0.806670 0
+Epoch 3 0.7 [sec] 251237.664000 0.678839 0
+Epoch 4 0.7 [sec] 3550.534750 0.619815 0
+Epoch 5 0.7 [sec] 348.931625 0.583791 0
+Epoch 6 0.7 [sec] 86.570625 0.558077 0
+Epoch 7 0.7 [sec] 37.099301 0.539099 0
+Epoch 8 0.7 [sec] 21.521199 0.524037 0
+Epoch 9 0.7 [sec] 14.973863 0.511702 0
+Epoch 10 0.7 [sec] 11.680677 0.501447 0
+Epoch 11 0.7 [sec] 9.734847 0.492563 0
+Epoch 12 0.7 [sec] 8.491271 0.484873 0
+Epoch 13 0.7 [sec] 7.668319 0.478326 0
+Epoch 14 0.7 [sec] 7.071877 0.472565 0
+Epoch 15 0.7 [sec] 6.607587 0.467325 0
+Epoch 16 0.7 [sec] 6.249558 0.462609 0
+Epoch 17 0.7 [sec] 5.962024 0.458327 0
+Epoch 18 0.7 [sec] 5.732278 0.454434 0
+Epoch 19 0.7 [sec] 5.544102 0.450849 0
+Epoch 20 0.7 [sec] 5.386303 0.447556 0
+[I 2023-11-07 19:33:03,254] Trial 9 finished with value: 10772.6064453125 and parameters: {'lr': 0.03482059722810703, 'batch_size': 10, 'num_blocks': 1, 'features_per_block1': 3, 'num_layers1': 1, 'network': 'ResNet'}. Best is trial 6 with value: 7429.49658203125.
+
+trail number = 10
+Best value: 7429.49658203125, Best params: {'lr': 0.0002775059131499799, 'batch_size': 10, 'num_blocks': 2, 'features_per_block1': 4, 'num_layers1': 1, 'features_per_block2': 16, 'layers_per_block2': 4, 'network': 'ConvNet'}
+saving study in to file study.pkl
+Number of finished trials: 10
+Best trial:
+  Value: 7429.49658203125
+  Params: 
+lr: 0.0002775059131499799
+batch_size: 10
+num_blocks: 2
+features_per_block1: 4
+num_layers1: 1
+features_per_block2: 16
+layers_per_block2: 4
+network: ConvNet
+
 
 
 
