@@ -80,30 +80,15 @@ created study file
 [I 2023-11-07 19:22:22,470] A new study created in memory with name: no-name-bdd2786c-0b59-4ebc-90c2-c78fb116f6a7
 dataset.npy
 
-### ResNet [2 4] [32 64]
+ResNet [2 4] [32 64]
 
 number of batches = 7.8125
 
 Epoch 1 15.2 [sec] 30487.012000 0.415764 0
-Epoch 2 7.0 [sec] 1519144.960000 0.340026 1
-Epoch 3 7.1 [sec] 26603.620000 0.326824 0
-Epoch 4 6.7 [sec] 11.709255 0.310173 0
-Epoch 5 6.7 [sec] 11.628438 0.305226 0
-Epoch 6 6.7 [sec] 3.894254 0.304021 0
-Epoch 7 6.8 [sec] 5.434859 0.298892 1
-Epoch 8 7.0 [sec] 1126658.560000 0.304861 2
-Epoch 9 6.7 [sec] 3.099239 0.295664 0
-Epoch 10 6.7 [sec] 2.908993 0.294584 0
-Epoch 11 6.7 [sec] 4.521427 0.291933 1
-Epoch 12 6.7 [sec] 1031.194125 0.292859 2
-Epoch 13 6.7 [sec] 2.786365 0.289942 0
-Epoch 14 6.8 [sec] 2.764447 0.290485 0
-Epoch 15 6.8 [sec] 2.753260 0.288201 0
-Epoch 16 6.8 [sec] 3.866322 0.289719 1
-Epoch 17 6.7 [sec] 2.727962 0.288435 0
-Epoch 18 6.7 [sec] 513.564844 0.287538 1
-Epoch 19 6.7 [sec] 136.588203 0.288522 2
+......
 Epoch 20 6.8 [sec] 52.063090 0.290753 3
+
+
 [I 2023-11-07 19:24:47,600] Trial 0 finished with value: 43647.39453125 and parameters: {'lr': 0.07641435988290146, 'batch_size': 7, 'num_blocks': 2, 'features_per_block1': 5, 'num_layers1': 2, 'features_per_block2': 64, 'layers_per_block2': 4, 'network': 'ResNet'}. Best is trial 0 with value: 43647.39453125.
 
 trail number = 1
@@ -111,10 +96,12 @@ Best value: 43647.39453125, Best params: {'lr': 0.07641435988290146, 'batch_size
 saving study in to file study.pkl
 
 
+
 ResNet [2 3] [32 64]
 number of batches = 1.953125
 Epoch 1 11.0 [sec] 6274357919.744000 0.886518 0
 ........
+
 [I 2023-11-07 19:26:37,707] Trial 1 finished with value: 14073.416015625 and parameters: {'lr': 0.029168704673281753, 'batch_size': 9, 'num_blocks': 2, 'features_per_block1': 5, 'num_layers1': 2, 'features_per_block2': 64, 'layers_per_block2': 3, 'network': 'ResNet'}. Best is trial 1 with value: 14073.416015625
 
 trail number = 2
@@ -125,6 +112,7 @@ saving study in to file study.pkl
 ConvNet [2] [8]
 number of batches = 1.953125
 Epoch 1 3.1 [sec] 203614920376.320007 1.379745 0
+.........
 
 [I 2023-11-07 19:27:02,401] Trial 2 finished with value: 117902.59375 and parameters: {'lr': 0.005381721772891036, 'batch_size': 9, 'num_blocks': 1, 'features_per_block1': 3, 'num_layers1': 2, 'network': 'ConvNet'}. Best is trial 1 with value: 14073.416015625
 
@@ -139,6 +127,7 @@ number of batches = 7.8125
 Epoch 1 6.9 [sec] 2693463801.856000 0.641244 0
 ..........
 Epoch 20 2.8 [sec] 2.651378 0.350648 0
+
 [I 2023-11-07 19:28:02,504] Trial 3 finished with value: 42422.05078125 and parameters: {'lr': 0.004493857248617635, 'batch_size': 7, 'num_blocks': 2, 'features_per_block1': 4, 'num_layers1': 2, 'features_per_block2': 32, 'layers_per_block2': 4, 'network': 'ConvNet'}. Best is trial 1 with value: 14073.416015625
 
 trail number = 4
@@ -160,7 +149,9 @@ saving study in to file study.pkl
 ConvNet [1] [32]
 number of batches = 1.953125
 Epoch 1 3.3 [sec] 1099948573589.503906 2.447904 0
+.............
 Epoch 20 2.4 [sec] 5.607065 0.424946 0
+
 [I 2023-11-07 19:31:08,217] Trial 5 finished with value: 22428.26171875 and parameters: {'lr': 0.015774233357113494, 'batch_size': 9, 'num_blocks': 1, 'features_per_block1': 5, 'num_layers1': 1, 'network': 'ConvNet'}. Best is trial 1 with value: 14073.416015625
 
 trail number = 6
@@ -171,7 +162,9 @@ saving study in to file study.pkl
 ConvNet [1 4] [16 16]
 number of batches = 0.9765625
 Epoch 1 4.5 [sec] 54329.084000 0.462086 0
+................
 Epoch 20 1.4 [sec] 3.714748 0.429612 0
+
 [I 2023-11-07 19:31:39,124] Trial 6 finished with value: 7429.49658203125 and parameters: {'lr': 0.0002775059131499799, 'batch_size': 10, 'num_blocks': 2, 'features_per_block1': 4, 'num_layers1': 1,<br> 'features_per_block2': 16, 'layers_per_block2': 4, 'network': 'ConvNet'}. Best is trial 6 with value: 7429.49658203125
 
 trail number = 7
@@ -182,7 +175,9 @@ saving study in to file study.pkl
 ResNet [2] [4]
 number of batches = 7.8125
 Epoch 1 4.6 [sec] 4482.470500 0.378300 0
+..............
 Epoch 20 0.9 [sec] 30.107635 0.372391 5
+
 [I 2023-11-07 19:32:02,715] Trial 7 finished with value: 50778.3125 and parameters: {'lr': 0.21320972196439056, 'batch_size': 7, 'num_blocks': 1, 'features_per_block1': 2, 'num_layers1': 2, 'network': 'ResNet'}. Best is trial 6 with value: 7429.49658203125.<br>
 
 trail number = 8
@@ -193,8 +188,9 @@ saving study in to file study.pkl
 ConvNet [2 2] [16 32]
 number of batches = 7.8125
 Epoch 1 6.1 [sec] 160320744062.976013 8.803352 0
-
+...................
 Epoch 15 2.5 [sec] 63443017.728000 0.340874 9
+
 [I 2023-11-07 19:32:46,695] Trial 8 finished with value: 49819164672.0 and parameters: {'lr': 0.03179689199761305, 'batch_size': 7, 'num_blocks': 2, 'features_per_block1': 4, 'num_layers1': 2, 'features_per_block2': 32, 'layers_per_block2': 2, 'network': 'ConvNet'}. Best is trial 6 with value: 7429.49658203125
 
 trail number = 9
@@ -205,7 +201,9 @@ saving study in to file study.pkl
 ResNet [1] [8]
 number of batches = 0.9765625
 Epoch 1 2.6 [sec] 135388677013.503998 1.203094 0
+...................
 Epoch 20 0.7 [sec] 5.386303 0.447556 0
+
 [I 2023-11-07 19:33:03,254] Trial 9 finished with value: 10772.6064453125 and parameters: {'lr': 0.03482059722810703, 'batch_size': 10, 'num_blocks': 1, 'features_per_block1': 3, 'num_layers1': 1, 'network': 'ResNet'}. Best is trial 6 with value: 7429.49658203125.
 
 trail number = 10
