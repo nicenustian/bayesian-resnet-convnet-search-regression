@@ -15,20 +15,20 @@ The general architecture is each ConvNet/ResNet is divided into stages where fea
 To make chnages to the laid out grid search for architecture and hyper paramters please modify this part of section in file objective_func.py
 
 ```python
-     choose hyper parameters for model training
+    # choose hyper parameters for model training
     initial_learning_rate = trial.suggest_float('lr', 1e-4, 0.5, log=True)
-    #powers of two
+    # powers of two
     batch_size = np.power(2, trial.suggest_int("batch_size", 5, 10))
-    #four stages, inspired by ResNet
+    # four stages, inspired by ResNet
     num_blocks = np.full(trial.suggest_int("num_blocks", 1, 2), 1, dtype=np.int32)
     
     features_per_block = np.ones(num_blocks.shape, dtype=np.int32)
     layers_per_block = np.ones(num_blocks.shape, dtype=np.int32)
-    #the features at first stage keeping feature as power of two
+    # the features at first stage keeping feature as power of two
     features_per_block[0] = np.power(2, trial.suggest_int("features_per_block1", 2, 5))
     layers_per_block[0] = trial.suggest_int("num_layers1", 1, 2)
     
-    #layers at each stage, maximum
+    # layers at each stage, maximum
     max_layers_per_block = 4
 
     for ci in range(1,len(num_blocks)):
@@ -44,7 +44,7 @@ To make chnages to the laid out grid search for architecture and hyper paramters
                                              max_layers_per_block)
 
     
-    #suggest a network
+    # suggest a network
     network = trial.suggest_categorical("network", ["ConvNet", "ResNet"])
 ```
 
