@@ -12,9 +12,10 @@ The general architecture is each ConvNet/ResNet is divided into stages where fea
 
 # Applying  changes to grid search
 
-To make chnages to the laid out grid search for architecture and hyper paramters please modify this part of section in file 
+To make chnages to the laid out grid search for architecture and hyper paramters please modify this part of section in file objective_func.py
 
-```     #choose hyper parameters for model training
+```
+     choose hyper parameters for model training
     initial_learning_rate = trial.suggest_float('lr', 1e-4, 0.5, log=True)
     #powers of two
     batch_size = np.power(2, trial.suggest_int("batch_size", 5, 10))
@@ -44,7 +45,8 @@ To make chnages to the laid out grid search for architecture and hyper paramters
 
     
     #suggest a network
-    network = trial.suggest_categorical("network", ["ConvNet", "ResNet"]) ```
+    network = trial.suggest_categorical("network", ["ConvNet", "ResNet"])
+```
 
 
 # Usages
