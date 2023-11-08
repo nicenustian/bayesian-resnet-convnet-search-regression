@@ -11,7 +11,9 @@ The general architecture is each ConvNet/ResNet is divided into stages where fea
 
 # Dataset
 
-You need to provide a dataset file which is in .npy format for the code to work. All array has the shape  Examples x Size of each example x Channels. The input and corresponding outputs are xdata and ydata respectively. Each sample is weighted, if not please provide  ```pythonnumpy.ones(xdata.shape)``` array.
+You need to provide a dataset file which is in .npy format for the code to work. All array has the shape  Examples x Size of each example. The input and corresponding outputs are xdata and ydata respectively. Each sample is weighted, if not please provide  ```python 
+numpy.ones(xdata.shape)``` 
+array.
 
 The dataset file is read as
 ```python
