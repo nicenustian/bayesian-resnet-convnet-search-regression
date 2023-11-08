@@ -75,12 +75,15 @@ main.py [-h] [--epochs EPOCHS] [--patience_epochs PATIENCE_EPOCHS] [--trails TRA
 ```
 
 
- epochs, trails,  patience_epochs =  20 10 10<br>
+```command
+
+epochs, trails,  patience_epochs =  20 10 10<br>
 created study file<br>
 [I 2023-11-07 19:22:22,470] A new study created in memory with name: no-name-bdd2786c-0b59-4ebc-90c2-c78fb116f6a7<br>
 dataset.npy<br>
 
 ### ResNet [2 4] [32 64]<br>
+
 number of batches = 7.8125<br>
 
 Epoch 1 15.2 [sec] 30487.012000 0.415764 0<br>
@@ -225,6 +228,8 @@ features_per_block2: 16<br>
 layers_per_block2: 4<br>
 network: ConvNet<br>
 <br>
+
+```
 
 
 
