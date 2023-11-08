@@ -2,7 +2,12 @@
 
 
 The repo helps you search for a optimal architecture for a given dataset Convolutional Neural Network or Residual Neural Network for 1d signals. 
-The general architecture is each ConvNet/ResNet is divided into stages where features are kept fix at each one. Several layers at each stage increasing sequentially. 
+The general architecture is each ConvNet/ResNet is divided into stages where features are kept fix at each one. Several layers at each stage increasing sequentially. For each trail either ConvNEt or ResNet with stages, layers at each stage and features at each stage is selected. Furthermroe, learning and batch size.
+
+# Schematic of general architecture
+
+![schematic](schematic.jpg)
+
 
 # Usages
 usage: main.py [-h] [--epochs EPOCHS] [--patience_epochs PATIENCE_EPOCHS] [--trails TRAILS] [--seed SEED] [--load_study LOAD_STUDY] [--dataset_file DATASET_FILE] [--study_file STUDY_FILE]
@@ -16,7 +21,8 @@ usage: main.py [-h] [--epochs EPOCHS] [--patience_epochs PATIENCE_EPOCHS] [--tra
 created study file<br>
 [I 2023-11-07 19:22:22,470] A new study created in memory with name: no-name-bdd2786c-0b59-4ebc-90c2-c78fb116f6a7<br>
 dataset.npy<br>
-ResNet [2 4] [32 64]<br>
+
+## ResNet [2 4] [32 64]<br>
 number of batches = 7.8125<br>
 
 Epoch 1 15.2 [sec] 30487.012000 0.415764 0<br>
@@ -46,7 +52,7 @@ Best value: 43647.39453125, Best params: {'lr': 0.07641435988290146, 'batch_size
 saving study in to file study.pkl<br>
 
 
-ResNet [2 3] [32 64]
+## ResNet [2 3] [32 64]
 number of batches = 1.953125
 Epoch 1 11.0 [sec] 6274357919.744000 0.886518 0<br>
 ........<br>
@@ -57,7 +63,7 @@ Best value: 14073.416015625, Best params: {'lr': 0.029168704673281753, 'batch_si
 saving study in to file study.pkl<br>
 
 
-ConvNet [2] [8]<br>
+## ConvNet [2] [8]<br>
 number of batches = 1.953125<br>
 Epoch 1 3.1 [sec] 203614920376.320007 1.379745 0<br>
 
@@ -68,7 +74,7 @@ Best value: 14073.416015625, Best params: {'lr': 0.029168704673281753, 'batch_si
 saving study in to file study.pkl<br>
 
 
-ConvNet [2 4] [16 32]<br>
+## ConvNet [2 4] [16 32]<br>
 number of batches = 7.8125<br>
 
 Epoch 1 6.9 [sec] 2693463801.856000 0.641244 0<br>
@@ -81,7 +87,7 @@ Best value: 14073.416015625, Best params: {'lr': 0.029168704673281753, 'batch_si
 saving study in to file study.pkl<br>
 
 
-ResNet [1 4] [16 32]<br>
+## ResNet [1 4] [16 32]<br>
 number of batches = 31.25<br>
 Epoch 1 12.1 [sec] 16112.469000 0.503134 0<br>
 
@@ -92,7 +98,7 @@ Best value: 14073.416015625, Best params: {'lr': 0.029168704673281753, 'batch_si
 saving study in to file study.pkl<br>
 
 
-ConvNet [1] [32]<br>
+## ConvNet [1] [32]<br>
 number of batches = 1.953125<br>
 Epoch 1 3.3 [sec] 1099948573589.503906 2.447904 0<br>
 Epoch 20 2.4 [sec] 5.607065 0.424946 0<br>
@@ -103,7 +109,7 @@ Best value: 14073.416015625, Best params: {'lr': 0.029168704673281753, 'batch_si
 saving study in to file study.pkl<br>
 
 
-ConvNet [1 4] [16 16]<br>
+## ConvNet [1 4] [16 16]<br>
 number of batches = 0.9765625<br>
 Epoch 1 4.5 [sec] 54329.084000 0.462086 0<br>
 Epoch 20 1.4 [sec] 3.714748 0.429612 0<br>
@@ -114,7 +120,7 @@ Best value: 7429.49658203125, Best params: {'lr': 0.0002775059131499799, 'batch_
 saving study in to file study.pkl<br>
 
 
-ResNet [2] [4]<br>
+## ResNet [2] [4]<br>
 number of batches = 7.8125<br>
 Epoch 1 4.6 [sec] 4482.470500 0.378300 0<br>
 Epoch 20 0.9 [sec] 30.107635 0.372391 5<br>
@@ -125,7 +131,7 @@ Best value: 7429.49658203125, Best params: {'lr': 0.0002775059131499799, 'batch_
 saving study in to file study.pkl<br>
 
 
-ConvNet [2 2] [16 32]<br>
+## ConvNet [2 2] [16 32]<br>
 number of batches = 7.8125<br>
 Epoch 1 6.1 [sec] 160320744062.976013 8.803352 0<br>
 
@@ -137,7 +143,7 @@ Best value: 7429.49658203125, Best params: {'lr': 0.0002775059131499799, 'batch_
 saving study in to file study.pkl<br>
 
 
-ResNet [1] [8]<br>
+## ResNet [1] [8]<br>
 number of batches = 0.9765625<br>
 Epoch 1 2.6 [sec] 135388677013.503998 1.203094 0<br>
 Epoch 20 0.7 [sec] 5.386303 0.447556 0<br>
@@ -146,8 +152,10 @@ Epoch 20 0.7 [sec] 5.386303 0.447556 0<br>
 trail number = 10<br>
 Best value: 7429.49658203125, Best params: {'lr': 0.0002775059131499799, 'batch_size': 10, 'num_blocks': 2, 'features_per_block1': 4, 'num_layers1': 1, 'features_per_block2': 16, 'layers_per_block2': 4, 'network': 'ConvNet'}<br>
 saving study in to file study.pkl<br>
-Number of finished trials: 10<br>
-Best trial:<br>
+
+## Number of finished trials: 10<br>
+
+## Best trial:<br>
   Value: 7429.49658203125<br>
   Params: <br>
 lr: 0.0002775059131499799<br>
