@@ -14,7 +14,7 @@ The general architecture is each ConvNet/ResNet is divided into stages where fea
 
 To make chnages to the laid out grid search for architecture and hyper paramters please modify this part of section in file objective_func.py
 
-```
+```python
      choose hyper parameters for model training
     initial_learning_rate = trial.suggest_float('lr', 1e-4, 0.5, log=True)
     #powers of two
@@ -50,11 +50,15 @@ To make chnages to the laid out grid search for architecture and hyper paramters
 
 
 # Usages
-```main.py [-h] [--epochs EPOCHS] [--patience_epochs PATIENCE_EPOCHS] [--trails TRAILS] [--seed SEED] [--load_study LOAD_STUDY] [--dataset_file DATASET_FILE] [--study_file STUDY_FILE] ```
+```command
+main.py [-h] [--epochs EPOCHS] [--patience_epochs PATIENCE_EPOCHS] [--trails TRAILS] [--seed SEED] [--load_study LOAD_STUDY] [--dataset_file DATASET_FILE] [--study_file STUDY_FILE]
+```
 
 
 # Output for the command
- ``` python main.py --load_study False --study_file study.pkl  --epochs 20 --trails 10 ```
+ ```command
+ python main.py --load_study False --study_file study.pkl  --epochs 20 --trails 10
+```
 
 
  epochs, trails,  patience_epochs =  20 10 10<br>
