@@ -2,7 +2,7 @@
 
 
 The repo helps you search for a optimal architecture for a given dataset Convolutional Neural Network or Residual Neural Network for 1d signals. 
-The general architecture is each ConvNet/ResNet is divided into stages where features are kept fix at each one. Several layers at each stage increasing sequentially. For each trail either ConvNEt or ResNet with stages, layers at each stage and features at each stage is selected. Furthermroe, learning and batch size.
+The general architecture is each ConvNet/ResNet is divided into stages where features are kept fix at each one. Several layers at each stage increasing sequentially. For each trail either ConvNet or ResNet with given stages, layers and features at each stage is selected. In addition hyperparamters is also searched for such as learning rate and batch size.
 
 # Schematic of general architecture
 
@@ -10,11 +10,11 @@ The general architecture is each ConvNet/ResNet is divided into stages where fea
 
 
 # Usages
-usage: main.py [-h] [--epochs EPOCHS] [--patience_epochs PATIENCE_EPOCHS] [--trails TRAILS] [--seed SEED] [--load_study LOAD_STUDY] [--dataset_file DATASET_FILE] [--study_file STUDY_FILE]
+```main.py [-h] [--epochs EPOCHS] [--patience_epochs PATIENCE_EPOCHS] [--trails TRAILS] [--seed SEED] [--load_study LOAD_STUDY] [--dataset_file DATASET_FILE] [--study_file STUDY_FILE] ```
 
 
 # Output for the command
- python main.py --load_study False --study_file study.pkl  --epochs 20 --trails 10
+ ``` python main.py --load_study False --study_file study.pkl  --epochs 20 --trails 10 ```
 
 
  epochs, trails,  patience_epochs =  20 10 10<br>
