@@ -6,7 +6,7 @@ The general architecture is each ConvNet/ResNet is divided into stages where fea
 
 # Schematic of general architecture
 
-![schematic](schematic.jpg)
+![schematic](schematic.png)
 
 
 # Usages
