@@ -9,6 +9,19 @@ The general architecture is each ConvNet/ResNet is divided into stages where fea
 
 ![schematic](schematic.png)
 
+# Dataset
+
+You need to provide a dataset file which is in .npy format for the code to work. All array has the shape  Examples x Size of each example x Channels. The input and corresponding outputs are xdata and ydata respectively. Each sample is weighted, if not please provide  ```pythonnumpy.ones(xdata.shape)``` array.
+
+The dataset file is read as
+```python
+
+    with open(dataset_file, 'rb') as f:
+        xdata = np.load(f)
+        ydata = np.load(f)
+        weights = np.load(f)
+```
+
 
 # Applying  changes to grid search
 
